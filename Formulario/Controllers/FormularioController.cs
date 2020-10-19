@@ -28,10 +28,12 @@ namespace Formulario.Controllers
  [HttpPost]
            public IActionResult Enviar(Formularios objFormulario){
 
+               if(ModelState.IsValid){
                 objFormulario.Respuesta = "Gracias, hemos procesado su solicitud";
                 _context.Add(objFormulario);
                 _context.SaveChanges();
-           
+               }
+               
                  return View("index", objFormulario);
         }
     }
