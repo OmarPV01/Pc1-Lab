@@ -28,7 +28,7 @@ namespace Formulario.Controllers
  [HttpPost]
            public IActionResult Enviar(Formularios objFormulario){
 
-                objFormulario.Respuesta = "Gracias, hemos procesado su solicitud" + "\n" + objFormulario.nombre;
+                objFormulario.Respuesta = "Gracias, hemos procesado su solicitud";
                 _context.Add(objFormulario);
                 _context.SaveChanges();
            
