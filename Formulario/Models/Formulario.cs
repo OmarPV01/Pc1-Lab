@@ -12,7 +12,7 @@ namespace Formulario.Models
         [Column("id")]
         public int ID { get; set; }
 
-        [Required(ErrorMessage = "Por favor ingrese un Nombre")]
+        [Required(ErrorMessage = "Registre un nombre por favor")]
         [Display(Name="name")]
         [Column("name")]
 
